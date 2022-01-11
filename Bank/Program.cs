@@ -19,7 +19,8 @@ namespace Bank
             Application.Run(new Form1());
 
             BankDataContext myContext = new BankDataContext();
-            myContext.Posts.Add(new Post(1, 10000,"Admin","Ferko",DateTime.Now,DateTime.Now));
+            myContext.Posts.Add(new Post(1, 10000.00,"Admin","Ferko",DateTime.Now,DateTime.Now));
+            myContext.SaveChanges();
         }
     }
 }
