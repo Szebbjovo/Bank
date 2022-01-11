@@ -1,14 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//connection string: Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
 namespace Bank
 {
-    internal class services
+    public class Post
     {
+        public int ID { get; set; }
+        public double egyenleg { get; set; }
+
+        public string kNev { get; set; }
+        public string vNev { get; set; }
+        public DateTime szuletes { get; set; }
+        public DateTime regisztracioDatuma { get; set; }
+    
+    
+    }
+
+    public class BankDataContext : DbContext { 
+        public DbSet<Post> Posts { get; set; }
     }
 
     public class Bankszamla {
