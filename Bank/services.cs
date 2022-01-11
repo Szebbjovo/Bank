@@ -12,6 +12,17 @@ namespace Bank
 {
     public class Post
     {
+
+        public Post(int idm,double egyenleg, string knev, string vnev, DateTime now1, DateTime now2)
+        {
+            this.ID = idm;
+            this.egyenleg = egyenleg;
+            this.kNev = knev;
+            this.kNev = vnev;
+            this.szuletes = now1;
+            this.regisztracioDatuma = now2;
+        }
+
         public int ID { get; set; }
         public double egyenleg { get; set; }
 

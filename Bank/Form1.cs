@@ -16,5 +16,18 @@ namespace Bank
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            var result = MessageBox.Show("Minek neked penz ha egy jelszot nem vagy kepes megjegyezni ??!?!", "NEM ERDEKEL!",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Question);
+        }
     }
 }
