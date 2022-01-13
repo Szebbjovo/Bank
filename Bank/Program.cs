@@ -18,9 +18,9 @@ namespace Bank
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AccountsManager_employeOnly());
+            Application.Run(new Form1());
 
-            BankDataContext myContext = new BankDataContext();
+            //BankDataContext myContext = new BankDataContext();
             //myContext.Posts.Add(new Post(3, 3000.00,"kacsa","ur",DateTime.Now,DateTime.Now,"sziauram"));
             //myContext.SaveChanges();
         }

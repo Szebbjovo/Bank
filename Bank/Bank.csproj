@@ -111,6 +111,9 @@
     <EmbeddedResource Include="Forms\RegistrationPage.resx">
       <DependentUpon>RegistrationPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserDataPage.resx">
+      <DependentUpon>UserDataPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201111236061_sziaUram.resx">
       <DependentUpon>202201111236061_sziaUram.cs</DependentUpon>
     </EmbeddedResource>

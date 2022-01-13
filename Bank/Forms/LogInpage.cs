@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Bank.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,6 +46,34 @@ namespace Bank
                 MessageBox.Show(ex.Message);
             }
             
+        }
+
+        private void signIn_Click(object sender, EventArgs e)
+        {
+
+            BankDataContext context = new BankDataContext();
+
+
+                var cont = context.Posts.Where(actual => actual.username == username.Text).FirstOrDefault();
+
+
+
+            if (cont != null & cont.password == passwordTB.Text)
+            {
+                try
+                {
+                    UserDatalabel form3 = new UserDatalabel();
+                    form3.ShowDialog();
+                    string segitseg = cont.username;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+
+
         }
     }
 }

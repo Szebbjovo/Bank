@@ -30,21 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.vasbankDataSet = new Bank.vasbankDataSet();
             this.postsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vasbankDataSet = new Bank.vasbankDataSet();
             this.postsTableAdapter = new Bank.vasbankDataSetTableAdapters.PostsTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.egyenlegDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kNevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vNevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.szuletesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.regisztracioDatumaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vasbankDataSet1 = new Bank.vasbankDataSet();
             this.employeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.regisztracioDatumaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.szuletesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vNevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kNevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.egyenlegDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vasbankDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vasbankDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vasbankDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,62 +70,30 @@
             this.dataGridView1.Size = new System.Drawing.Size(945, 424);
             this.dataGridView1.TabIndex = 0;
             // 
-            // vasbankDataSet
-            // 
-            this.vasbankDataSet.DataSetName = "vasbankDataSet";
-            this.vasbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // postsBindingSource
             // 
             this.postsBindingSource.DataMember = "Posts";
             this.postsBindingSource.DataSource = this.vasbankDataSet;
             // 
+            // vasbankDataSet
+            // 
+            this.vasbankDataSet.DataSetName = "vasbankDataSet";
+            this.vasbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // postsTableAdapter
             // 
             this.postsTableAdapter.ClearBeforeFill = true;
             // 
-            // iDDataGridViewTextBoxColumn
+            // vasbankDataSet1
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vasbankDataSet1.DataSetName = "vasbankDataSet";
+            this.vasbankDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // egyenlegDataGridViewTextBoxColumn
+            // employeDataGridViewCheckBoxColumn
             // 
-            this.egyenlegDataGridViewTextBoxColumn.DataPropertyName = "egyenleg";
-            this.egyenlegDataGridViewTextBoxColumn.HeaderText = "egyenleg";
-            this.egyenlegDataGridViewTextBoxColumn.Name = "egyenlegDataGridViewTextBoxColumn";
-            // 
-            // kNevDataGridViewTextBoxColumn
-            // 
-            this.kNevDataGridViewTextBoxColumn.DataPropertyName = "kNev";
-            this.kNevDataGridViewTextBoxColumn.HeaderText = "kNev";
-            this.kNevDataGridViewTextBoxColumn.Name = "kNevDataGridViewTextBoxColumn";
-            // 
-            // vNevDataGridViewTextBoxColumn
-            // 
-            this.vNevDataGridViewTextBoxColumn.DataPropertyName = "vNev";
-            this.vNevDataGridViewTextBoxColumn.HeaderText = "vNev";
-            this.vNevDataGridViewTextBoxColumn.Name = "vNevDataGridViewTextBoxColumn";
-            // 
-            // szuletesDataGridViewTextBoxColumn
-            // 
-            this.szuletesDataGridViewTextBoxColumn.DataPropertyName = "szuletes";
-            this.szuletesDataGridViewTextBoxColumn.HeaderText = "szuletes";
-            this.szuletesDataGridViewTextBoxColumn.Name = "szuletesDataGridViewTextBoxColumn";
-            // 
-            // regisztracioDatumaDataGridViewTextBoxColumn
-            // 
-            this.regisztracioDatumaDataGridViewTextBoxColumn.DataPropertyName = "regisztracioDatuma";
-            this.regisztracioDatumaDataGridViewTextBoxColumn.HeaderText = "regisztracioDatuma";
-            this.regisztracioDatumaDataGridViewTextBoxColumn.Name = "regisztracioDatumaDataGridViewTextBoxColumn";
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.employeDataGridViewCheckBoxColumn.DataPropertyName = "employe";
+            this.employeDataGridViewCheckBoxColumn.HeaderText = "employe";
+            this.employeDataGridViewCheckBoxColumn.Name = "employeDataGridViewCheckBoxColumn";
             // 
             // passwordDataGridViewTextBoxColumn
             // 
@@ -131,11 +101,48 @@
             this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
             this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
             // 
-            // employeDataGridViewCheckBoxColumn
+            // usernameDataGridViewTextBoxColumn
             // 
-            this.employeDataGridViewCheckBoxColumn.DataPropertyName = "employe";
-            this.employeDataGridViewCheckBoxColumn.HeaderText = "employe";
-            this.employeDataGridViewCheckBoxColumn.Name = "employeDataGridViewCheckBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
+            // regisztracioDatumaDataGridViewTextBoxColumn
+            // 
+            this.regisztracioDatumaDataGridViewTextBoxColumn.DataPropertyName = "regisztracioDatuma";
+            this.regisztracioDatumaDataGridViewTextBoxColumn.HeaderText = "regisztracioDatuma";
+            this.regisztracioDatumaDataGridViewTextBoxColumn.Name = "regisztracioDatumaDataGridViewTextBoxColumn";
+            // 
+            // szuletesDataGridViewTextBoxColumn
+            // 
+            this.szuletesDataGridViewTextBoxColumn.DataPropertyName = "szuletes";
+            this.szuletesDataGridViewTextBoxColumn.HeaderText = "szuletes";
+            this.szuletesDataGridViewTextBoxColumn.Name = "szuletesDataGridViewTextBoxColumn";
+            // 
+            // vNevDataGridViewTextBoxColumn
+            // 
+            this.vNevDataGridViewTextBoxColumn.DataPropertyName = "vNev";
+            this.vNevDataGridViewTextBoxColumn.HeaderText = "vNev";
+            this.vNevDataGridViewTextBoxColumn.Name = "vNevDataGridViewTextBoxColumn";
+            // 
+            // kNevDataGridViewTextBoxColumn
+            // 
+            this.kNevDataGridViewTextBoxColumn.DataPropertyName = "kNev";
+            this.kNevDataGridViewTextBoxColumn.HeaderText = "kNev";
+            this.kNevDataGridViewTextBoxColumn.Name = "kNevDataGridViewTextBoxColumn";
+            // 
+            // egyenlegDataGridViewTextBoxColumn
+            // 
+            this.egyenlegDataGridViewTextBoxColumn.DataPropertyName = "egyenleg";
+            this.egyenlegDataGridViewTextBoxColumn.HeaderText = "egyenleg";
+            this.egyenlegDataGridViewTextBoxColumn.Name = "egyenlegDataGridViewTextBoxColumn";
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // AccountsManager_employeOnly
             // 
@@ -147,8 +154,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.AccountsManager_employeOnly_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vasbankDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vasbankDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vasbankDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -168,5 +176,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn employeDataGridViewCheckBoxColumn;
+        private vasbankDataSet vasbankDataSet1;
     }
 }

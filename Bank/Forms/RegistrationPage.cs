@@ -26,6 +26,16 @@ namespace Bank
         {
 
         }
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void RegisterSubmit_Click(object sender, EventArgs e)
         {
@@ -33,6 +43,7 @@ namespace Bank
             {
                 BankDataContext myContext = new BankDataContext();
                 myContext.Posts.Add(new Post(
+                    usernamming.Text,
                     false,
                     2,
                     0,
@@ -41,7 +52,7 @@ namespace Bank
                     BirthDayPicker.Value,
                     DateTime.Now, passwordField.Text
                         ));
-                //myContext.SaveChanges();
+                myContext.SaveChanges();
 
                 MessageBox.Show("Sikkeresen Regisztralt kedves "+KeresztNev.Text);
             }
@@ -50,9 +61,5 @@ namespace Bank
             }
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -830,25 +830,28 @@
   <data name="&gt;&gt;username.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="password.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="passwordTB.Location" type="System.Drawing.Point, System.Drawing">
     <value>764, 286</value>
   </data>
-  <data name="password.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="passwordTB.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="passwordTB.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 20</value>
   </data>
-  <data name="password.TabIndex" type="System.Int32, mscorlib">
+  <data name="passwordTB.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;password.Name" xml:space="preserve">
-    <value>password</value>
+  <data name="&gt;&gt;passwordTB.Name" xml:space="preserve">
+    <value>passwordTB</value>
   </data>
-  <data name="&gt;&gt;password.Type" xml:space="preserve">
+  <data name="&gt;&gt;passwordTB.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;password.Parent" xml:space="preserve">
+  <data name="&gt;&gt;passwordTB.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;password.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;passwordTB.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -905,25 +908,25 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="roleSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>828, 121</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="roleSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="roleSelect.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;roleSelect.Name" xml:space="preserve">
+    <value>roleSelect</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;roleSelect.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;roleSelect.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;roleSelect.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
@@ -953,76 +956,76 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="signIn.Location" type="System.Drawing.Point, System.Drawing">
     <value>764, 334</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="signIn.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="signIn.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="signIn.Text" xml:space="preserve">
     <value>Sing in</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;signIn.Name" xml:space="preserve">
+    <value>signIn</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;signIn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;signIn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;signIn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="registration.Location" type="System.Drawing.Point, System.Drawing">
     <value>764, 390</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="registration.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="registration.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="registration.Text" xml:space="preserve">
     <value>Register</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;registration.Name" xml:space="preserve">
+    <value>registration</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;registration.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;registration.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;registration.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="forgetMypassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>874, 334</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forgetMypassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 23</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="forgetMypassword.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="forgetMypassword.Text" xml:space="preserve">
     <value>Forget my password</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;forgetMypassword.Name" xml:space="preserve">
+    <value>forgetMypassword</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;forgetMypassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;forgetMypassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;forgetMypassword.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

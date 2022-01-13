@@ -12,8 +12,8 @@ namespace Bank
 {
     public class Post
     {
-        
-        public Post(bool emploj, int idm,double egyenleg, string knev, string vnev, DateTime now1, DateTime now2,string paswrd)
+        public Post() { }
+        public Post(string usernm,bool emploj, int idm,double egyenleg, string knev, string vnev, DateTime now1, DateTime now2,string paswrd)
         {
             this.ID = idm;
 
@@ -24,7 +24,7 @@ namespace Bank
             this.kNev = vnev;
             this.szuletes = now1;
             this.regisztracioDatuma = now2;
-            this.username = "kacsa";//vnev + "-" + knev;
+            this.username = usernm;//vnev + "-" + knev;
             this.password = paswrd;
         }
         
@@ -44,6 +44,7 @@ namespace Bank
 
     public class BankDataContext : DbContext { 
         public DbSet<Post> Posts { get; set; }
+        public string password { get; internal set; }
     }
 
     public class Bankszamla {

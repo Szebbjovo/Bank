@@ -44,6 +44,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.usernamming = new System.Windows.Forms.TextBox();
+            this.UsernaME = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +61,7 @@
             // 
             // VezetekNev
             // 
-            this.VezetekNev.Location = new System.Drawing.Point(12, 75);
+            this.VezetekNev.Location = new System.Drawing.Point(12, 53);
             this.VezetekNev.Name = "VezetekNev";
             this.VezetekNev.Size = new System.Drawing.Size(212, 20);
             this.VezetekNev.TabIndex = 1;
@@ -67,7 +69,7 @@
             // 
             // KeresztNev
             // 
-            this.KeresztNev.Location = new System.Drawing.Point(12, 140);
+            this.KeresztNev.Location = new System.Drawing.Point(12, 101);
             this.KeresztNev.Name = "KeresztNev";
             this.KeresztNev.Size = new System.Drawing.Size(212, 20);
             this.KeresztNev.TabIndex = 2;
@@ -76,6 +78,7 @@
             // 
             this.passwordField.Location = new System.Drawing.Point(12, 194);
             this.passwordField.Name = "passwordField";
+            this.passwordField.PasswordChar = '*';
             this.passwordField.Size = new System.Drawing.Size(212, 20);
             this.passwordField.TabIndex = 3;
             // 
@@ -89,7 +92,7 @@
             // Vnev
             // 
             this.Vnev.AutoSize = true;
-            this.Vnev.Location = new System.Drawing.Point(12, 59);
+            this.Vnev.Location = new System.Drawing.Point(12, 37);
             this.Vnev.Name = "Vnev";
             this.Vnev.Size = new System.Drawing.Size(60, 13);
             this.Vnev.TabIndex = 6;
@@ -98,7 +101,7 @@
             // knev
             // 
             this.knev.AutoSize = true;
-            this.knev.Location = new System.Drawing.Point(12, 124);
+            this.knev.Location = new System.Drawing.Point(14, 85);
             this.knev.Name = "knev";
             this.knev.Size = new System.Drawing.Size(61, 13);
             this.knev.TabIndex = 7;
@@ -174,12 +177,31 @@
             this.label2.TabIndex = 35;
             this.label2.Text = "ID:";
             // 
+            // usernamming
+            // 
+            this.usernamming.Location = new System.Drawing.Point(12, 140);
+            this.usernamming.Name = "usernamming";
+            this.usernamming.Size = new System.Drawing.Size(212, 20);
+            this.usernamming.TabIndex = 36;
+            // 
+            // UsernaME
+            // 
+            this.UsernaME.AutoSize = true;
+            this.UsernaME.Location = new System.Drawing.Point(14, 124);
+            this.UsernaME.Name = "UsernaME";
+            this.UsernaME.Size = new System.Drawing.Size(58, 13);
+            this.UsernaME.TabIndex = 37;
+            this.UsernaME.Text = "Username:";
+            this.UsernaME.Click += new System.EventHandler(this.label5_Click);
+            // 
             // Cim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(800, 409);
+            this.Controls.Add(this.UsernaME);
+            this.Controls.Add(this.usernamming);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.pictureBox1);
@@ -221,5 +243,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox usernamming;
+        private System.Windows.Forms.Label UsernaME;
     }
 }

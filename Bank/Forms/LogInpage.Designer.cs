@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.username = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
+            this.passwordTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.roleSelect = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.signIn = new System.Windows.Forms.Button();
+            this.registration = new System.Windows.Forms.Button();
+            this.forgetMypassword = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,10 +53,10 @@
             resources.ApplyResources(this.username, "username");
             this.username.Name = "username";
             // 
-            // password
+            // passwordTB
             // 
-            resources.ApplyResources(this.password, "password");
-            this.password.Name = "password";
+            resources.ApplyResources(this.passwordTB, "passwordTB");
+            this.passwordTB.Name = "passwordTB";
             // 
             // label1
             // 
@@ -68,51 +68,52 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // comboBox1
+            // roleSelect
             // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.roleSelect.FormattingEnabled = true;
+            resources.ApplyResources(this.roleSelect, "roleSelect");
+            this.roleSelect.Name = "roleSelect";
+            this.roleSelect.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // button1
+            // signIn
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.signIn, "signIn");
+            this.signIn.Name = "signIn";
+            this.signIn.UseVisualStyleBackColor = true;
+            this.signIn.Click += new System.EventHandler(this.signIn_Click);
             // 
-            // button2
+            // registration
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(this.registration, "registration");
+            this.registration.Name = "registration";
+            this.registration.UseVisualStyleBackColor = true;
+            this.registration.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // forgetMypassword
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            resources.ApplyResources(this.forgetMypassword, "forgetMypassword");
+            this.forgetMypassword.Name = "forgetMypassword";
+            this.forgetMypassword.UseVisualStyleBackColor = true;
+            this.forgetMypassword.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.forgetMypassword);
+            this.Controls.Add(this.registration);
+            this.Controls.Add(this.signIn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.roleSelect);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.password);
+            this.Controls.Add(this.passwordTB);
             this.Controls.Add(this.username);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -126,14 +127,14 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox passwordTB;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox roleSelect;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button signIn;
+        private System.Windows.Forms.Button registration;
+        private System.Windows.Forms.Button forgetMypassword;
     }
 }
 
