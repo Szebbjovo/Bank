@@ -22,12 +22,28 @@ namespace Bank
 
         }
 
+        //password recovering
         private void button3_Click(object sender, EventArgs e)
         {
 
             var result = MessageBox.Show("Minek neked penz ha egy jelszot nem vagy kepes megjegyezni ??!?!", "NEM ERDEKEL!",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Question);
+        }
+
+        //registration button
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Cim form2 = new Cim();
+                form2.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
     }
 }

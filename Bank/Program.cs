@@ -14,13 +14,14 @@ namespace Bank
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
             BankDataContext myContext = new BankDataContext();
-            myContext.Posts.Add(new Post(1, 10000.00,"Admin","Ferko",DateTime.Now,DateTime.Now));
-            myContext.SaveChanges();
+            //myContext.Posts.Add(new Post(3, 3000.00,"kacsa","ur",DateTime.Now,DateTime.Now,"sziauram"));
+            //myContext.SaveChanges();
         }
     }
 }

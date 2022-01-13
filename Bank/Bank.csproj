@@ -56,31 +56,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\AccountsManager_employeOnly.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\AccountsManager_employeOnly.Designer.cs">
+      <DependentUpon>AccountsManager_employeOnly.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Forms\LogInpage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Forms\LogInpage.Designer.cs">
+      <DependentUpon>LogInpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrationPage.Designer.cs">
+      <DependentUpon>RegistrationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserDataPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserDataPage.Designer.cs">
+      <DependentUpon>UserDataPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202201111236061_sziaUram.cs" />
     <Compile Include="Migrations\202201111236061_sziaUram.designer.cs">
       <DependentUpon>202201111236061_sziaUram.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201130926430_sziauramujnevekesjelszavak.cs" />
+    <Compile Include="Migrations\202201130926430_sziauramujnevekesjelszavak.designer.cs">
+      <DependentUpon>202201130926430_sziauramujnevekesjelszavak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201131135194_sziauramhello.cs" />
+    <Compile Include="Migrations\202201131135194_sziauramhello.designer.cs">
+      <DependentUpon>202201131135194_sziauramhello.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="services.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="services_\services.cs" />
+    <EmbeddedResource Include="Forms\LogInpage.resx">
+      <DependentUpon>LogInpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegistrationPage.resx">
+      <DependentUpon>RegistrationPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201111236061_sziaUram.resx">
       <DependentUpon>202201111236061_sziaUram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201130926430_sziauramujnevekesjelszavak.resx">
+      <DependentUpon>202201130926430_sziauramujnevekesjelszavak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201131135194_sziauramhello.resx">
+      <DependentUpon>202201131135194_sziauramhello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

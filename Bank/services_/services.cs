@@ -13,25 +13,33 @@ namespace Bank
     public class Post
     {
         
-        public Post(int idm,double egyenleg, string knev, string vnev, DateTime now1, DateTime now2)
+        public Post(bool emploj, int idm,double egyenleg, string knev, string vnev, DateTime now1, DateTime now2,string paswrd)
         {
             this.ID = idm;
+
+            this.employe = emploj;
+
             this.egyenleg = egyenleg;
             this.kNev = knev;
             this.kNev = vnev;
             this.szuletes = now1;
             this.regisztracioDatuma = now2;
+            this.username = "kacsa";//vnev + "-" + knev;
+            this.password = paswrd;
         }
         
         public int ID { get; set; }
         public double egyenleg { get; set; }
 
+        public bool employe { get; set; }
         public string kNev { get; set; }
         public string vNev { get; set; }
         public DateTime szuletes { get; set; }
         public DateTime regisztracioDatuma { get; set; }
     
-    
+        public string username { get; set; }
+        public string password { get; set; }
+
     }
 
     public class BankDataContext : DbContext { 
@@ -90,9 +98,6 @@ namespace Bank
 
 
     }
-
-
-
 
 
     class FolyoSzamla {

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bank
+namespace Bank.Forms
 {
-    public partial class Form2 : Form
+    public partial class UserDataPage : Form
     {
-        public Form2()
+        public UserDataPage()
         {
             InitializeComponent();
         }
