@@ -27,10 +27,64 @@ namespace Bank.Forms
  
     private void ShowData_Click(object sender, EventArgs e)
           {
-               BankDataContext context = new BankDataContext();
-               var cont = context.Posts.Where(actil  => actil.username == segitseg);
+                BankDataContext context = new BankDataContext();
+                //ennel mokolosabban nem lehet megoldani lol
+                var cont = context.Posts.Where(actil  => actil.username == usernameLoginHelper.usernameHp);
 
-               UserDatakerlekmenj.Text = cont;
+                UserDatakerlekmenj.Text = cont.ToString();
+            }
+
+
+        private void AddMonnnny_Click(object sender, EventArgs e)
+        {
+            //a betetel szamlalo es confirm gomb elrejtese es mutatasa
+            monniadas.Visible = true;
+            confirmAddation.Visible = true;
+
+            BankDataContext context = new BankDataContext();
+            //ennel mokolosabban nem lehet megoldani lol
+            var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp);
+
+            
+
+
+            try
+            {
+                //cont1.egyenleg += monniadas;//HEEEEELP
+            }
+            catch (Exception ex) { 
+                MessageBox.Show(ex.Message);
             }
         }
+
+        private void MonneytakeOut_Click(object sender, EventArgs e)
+        {
+            //a kivetel szamlalo es confirm gomb elrejtese es mutatasa
+            monnikivetel.Visible = true;
+            takeaOutconfirm.Visible = true;
+
+
+            BankDataContext context = new BankDataContext();
+            //ennel mokolosabban nem lehet megoldani lol
+            var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp);
+
+            try
+            {
+                //cont1.egyenleg -= monniadas;//HEEEEEEEEELP
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+            //kene kicsi biztonsag ide, egy bool al 
+        }
+    }
+
+    public static class userselect { 
+        //public static var helperToSelectUser;
+    }
+
 }

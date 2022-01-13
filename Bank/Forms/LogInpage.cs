@@ -12,6 +12,8 @@ using System.Windows.Forms;
 
 namespace Bank
 {
+
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -48,18 +50,23 @@ namespace Bank
             
         }
 
+
+
+
         private void signIn_Click(object sender, EventArgs e)
         {
 
             BankDataContext context = new BankDataContext();
 
+                //kiszedjuk a nont ba azt a sort amit fogunk hasznalni (a megadott user nev alapjan keresunk)
+                var cont = context.Posts.Where(actual => actual.username == username.Text).FirstOrDefault();//first order azt jelenti ,hogy az elsot azon a neven
 
-                var cont = context.Posts.Where(actual => actual.username == username.Text).FirstOrDefault();
-
+                usernameLoginHelper.usernameHp = cont.username;
 
 
             if (cont != null & cont.password == passwordTB.Text)
             {
+                //not nessesary try catch but u know... it is what it is
                 try
                 {
                     UserDatalabel form3 = new UserDatalabel();
@@ -75,5 +82,12 @@ namespace Bank
 
 
         }
+
+    }
+    //tudom ... tudom . . . Lehetett volna rosszabb is amugy
+    static class usernameLoginHelper
+    {
+        //this help us , to find out the actual user who is logined
+        public static string usernameHp;
     }
 }
