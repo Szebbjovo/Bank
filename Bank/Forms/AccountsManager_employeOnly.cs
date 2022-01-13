@@ -16,5 +16,12 @@ namespace Bank.Forms
         {
             InitializeComponent();
         }
+
+        private void AccountsManager_employeOnly_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'vasbankDataSet.Posts' table. You can move, or remove it, as needed.
+            this.postsTableAdapter.Fill(this.vasbankDataSet.Posts);
+
+        }
     }
 }

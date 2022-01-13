@@ -95,7 +95,16 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services_\getData.cs" />
     <Compile Include="services_\services.cs" />
+    <Compile Include="vasbankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vasbankDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AccountsManager_employeOnly.resx">
+      <DependentUpon>AccountsManager_employeOnly.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LogInpage.resx">
       <DependentUpon>LogInpage.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,9 +139,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="vasbankDataSet.xsc">
+      <DependentUpon>vasbankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vasbankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vasbankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vasbankDataSet.xss">
+      <DependentUpon>vasbankDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
