@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank.services_;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,10 +29,12 @@ namespace Bank.Forms
     private void ShowData_Click(object sender, EventArgs e)
           {
                 BankDataContext context = new BankDataContext();
-                //ennel mokolosabban nem lehet megoldani lol
-                var cont = context.Posts.Where(actil  => actil.username == usernameLoginHelper.usernameHp);
+            //ennel mokolosabban nem lehet megoldani lol
+            var cont4 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp).FirstOrDefault();
 
-                UserDatakerlekmenj.Text = cont.ToString();
+
+
+               UserDatakerlekmenj.Text = cont4.ToString();
             }
 
 
@@ -43,14 +46,11 @@ namespace Bank.Forms
 
             BankDataContext context = new BankDataContext();
             //ennel mokolosabban nem lehet megoldani lol
-            var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp);
-
-            
-
+            var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp).FirstOrDefault();
 
             try
             {
-                //cont1.egyenleg += monniadas;//HEEEEELP
+                _ = cont1.egyenleg + (double)monniadas.Value;//HEEEEELP
             }
             catch (Exception ex) { 
                 MessageBox.Show(ex.Message);
@@ -66,11 +66,11 @@ namespace Bank.Forms
 
             BankDataContext context = new BankDataContext();
             //ennel mokolosabban nem lehet megoldani lol
-            var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp);
+            var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp).FirstOrDefault();
 
             try
             {
-                //cont1.egyenleg -= monniadas;//HEEEEEEEEELP
+                _ = cont1.egyenleg - (double)monniadas.Value;//HEEEEEEEEELP
             }
             catch (Exception ex)
             {

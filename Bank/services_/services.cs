@@ -13,7 +13,7 @@ namespace Bank
     public class Post
     {
         public Post() { }
-        public Post(string usernm,bool emploj, int idm,double egyenleg, string knev, string vnev, DateTime now1, DateTime now2,string paswrd)
+        public Post(string usernm, bool emploj, int idm, double egyenleg, string knev, string vnev, DateTime now1, DateTime now2, string paswrd)
         {
             this.ID = idm;
 
@@ -27,7 +27,7 @@ namespace Bank
             this.username = usernm;//vnev + "-" + knev;
             this.password = paswrd;
         }
-        
+
         public int ID { get; set; }
         public double egyenleg { get; set; }
 
@@ -36,15 +36,24 @@ namespace Bank
         public string vNev { get; set; }
         public DateTime szuletes { get; set; }
         public DateTime regisztracioDatuma { get; set; }
-    
+
         public string username { get; set; }
         public string password { get; set; }
+
+
+        public override string ToString()
+        {
+            return "ID:" + ID + "\nEgyenleg: " + egyenleg + "\nKeresztnev:" + kNev + "\nVezeteknev: " + vNev + "\nSzuletesi datum:" + szuletes + "\nUgyfelunk a kovetkezo datum ota" + regisztracioDatuma + "\nFelhasznalovene: " + username + "jelszava: " + password;
+        } 
+
+        
 
     }
 
     public class BankDataContext : DbContext { 
         public DbSet<Post> Posts { get; set; }
         public string password { get; internal set; }
+        public string egyenleg { get; internal set; }
     }
 
     public class Bankszamla {

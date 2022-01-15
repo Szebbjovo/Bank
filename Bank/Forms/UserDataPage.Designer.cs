@@ -112,7 +112,7 @@
             this.takeaOutconfirm.Name = "takeaOutconfirm";
             this.takeaOutconfirm.Size = new System.Drawing.Size(39, 25);
             this.takeaOutconfirm.TabIndex = 7;
-            this.takeaOutconfirm.Text = "Add";
+            this.takeaOutconfirm.Text = "Get";
             this.takeaOutconfirm.UseVisualStyleBackColor = true;
             this.takeaOutconfirm.Visible = false;
             // 

@@ -6,11 +6,5 @@ using System.Threading.Tasks;
 
 namespace Bank.services_
 {
-    internal class getData
-    {
-    
-     
-    
-    
-    }
+   
 }
