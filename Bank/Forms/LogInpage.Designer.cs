@@ -34,7 +34,6 @@
             this.passwordTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.roleSelect = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.signIn = new System.Windows.Forms.Button();
             this.registration = new System.Windows.Forms.Button();
@@ -67,13 +66,6 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            // 
-            // roleSelect
-            // 
-            this.roleSelect.FormattingEnabled = true;
-            resources.ApplyResources(this.roleSelect, "roleSelect");
-            this.roleSelect.Name = "roleSelect";
-            this.roleSelect.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -110,7 +102,6 @@
             this.Controls.Add(this.registration);
             this.Controls.Add(this.signIn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.roleSelect);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passwordTB);
@@ -130,7 +121,6 @@
         private System.Windows.Forms.TextBox passwordTB;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox roleSelect;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button signIn;
         private System.Windows.Forms.Button registration;

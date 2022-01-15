@@ -12,8 +12,6 @@ using System.Windows.Forms;
 
 namespace Bank
 {
-
-
     public partial class Form1 : Form
     {
         public Form1()
@@ -49,38 +47,40 @@ namespace Bank
             }
             
         }
-
-
-
-
+        
+        //Beleptetes, megkeresi a usernev alapjan ,de eloszor megnezi , ha nem vagy admin
         private void signIn_Click(object sender, EventArgs e)
         {
+            if (username.Text == "ADMIN" & passwordTB.Text == "ferko")
+            {
+                AccountsManager_employeOnly admin = new AccountsManager_employeOnly();
+                admin.ShowDialog();
+            }
 
-            BankDataContext context = new BankDataContext();
+            else
+            {
+                BankDataContext context = new BankDataContext();
 
                 //kiszedjuk a nont ba azt a sort amit fogunk hasznalni (a megadott user nev alapjan keresunk)
                 var cont = context.Posts.Where(actual => actual.username == username.Text).FirstOrDefault();//first order azt jelenti ,hogy az elsot azon a neven
 
                 usernameLoginHelper.usernameHp = cont.username;
 
-
-            if (cont != null & cont.password == passwordTB.Text)
-            {
-                //not nessesary try catch but u know... it is what it is
-                try
+                if (cont != null & cont.password == passwordTB.Text)
                 {
-                    UserDatalabel form3 = new UserDatalabel();
-                    form3.ShowDialog();
-                    string segitseg = cont.username;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    //not nessesary try catch but u know... it is what it is
+                    try
+                    {
+                        UserDatalabel form3 = new UserDatalabel();
+                        form3.ShowDialog();
+                        string segitseg = cont.username;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
-
-
-
         }
 
     }

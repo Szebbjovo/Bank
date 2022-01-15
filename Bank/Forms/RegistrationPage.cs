@@ -36,7 +36,7 @@ namespace Bank
 
         }
 
-
+        //sor hozzaadasa a tablahoz
         private void RegisterSubmit_Click(object sender, EventArgs e)
         {
             try

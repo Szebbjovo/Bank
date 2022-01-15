@@ -40,22 +40,23 @@ namespace Bank
         public string username { get; set; }
         public string password { get; set; }
 
-
+        //custom tostrint ,hogy sorban, nev szerint irjon cuccokat 
         public override string ToString()
         {
-            return "ID:" + ID + "\nEgyenleg: " + egyenleg + "\nKeresztnev:" + kNev + "\nVezeteknev: " + vNev + "\nSzuletesi datum:" + szuletes + "\nUgyfelunk a kovetkezo datum ota" + regisztracioDatuma + "\nFelhasznalovene: " + username + "jelszava: " + password;
-        } 
-
-        
+            return "ID:" + ID + "\nEgyenleg: " + egyenleg + "\nKeresztnev:" + kNev + "\nVezeteknev: " + vNev + "\nSzuletesi datum:\n" + szuletes + "\nUgyfelunk a kovetkezo datum ota\n" + regisztracioDatuma + "\nFelhasznalovene: " + username + "jelszava: " + password;
+        }
 
     }
 
     public class BankDataContext : DbContext { 
         public DbSet<Post> Posts { get; set; }
-        public string password { get; internal set; }
-        public string egyenleg { get; internal set; }
     }
+    
 
+
+
+    // Kovetkezo funkciok //for upgrading
+  /*
     public class Bankszamla {
 
         protected double egyenleg;
@@ -108,15 +109,7 @@ namespace Bank
 
 
     }
+  */
 
-
-    class FolyoSzamla {
-
-        private double hitelKeret;
-
-        public FolyoSzamla(double egyenleg,double hitelKeret)
-        {
-             
-        } 
-    }
+    
 }
