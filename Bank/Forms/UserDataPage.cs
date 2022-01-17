@@ -25,7 +25,7 @@ namespace Bank.Forms
         }
 
 
-    //usernameHelper alapjan megkeressuk az aktualis felhasznalot, es kiirjuk
+        //usernameHelper alapjan megkeressuk az aktualis felhasznalot, es kiirjuk
         private void ShowData_Click(object sender, EventArgs e)
           {
                 BankDataContext context = new BankDataContext();

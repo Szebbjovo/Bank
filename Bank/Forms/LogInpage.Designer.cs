@@ -34,7 +34,6 @@
             this.passwordTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.signIn = new System.Windows.Forms.Button();
             this.registration = new System.Windows.Forms.Button();
             this.forgetMypassword = new System.Windows.Forms.Button();
@@ -67,11 +66,6 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // signIn
             // 
             resources.ApplyResources(this.signIn, "signIn");
@@ -101,7 +95,6 @@
             this.Controls.Add(this.forgetMypassword);
             this.Controls.Add(this.registration);
             this.Controls.Add(this.signIn);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passwordTB);
@@ -121,7 +114,6 @@
         private System.Windows.Forms.TextBox passwordTB;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button signIn;
         private System.Windows.Forms.Button registration;
         private System.Windows.Forms.Button forgetMypassword;
