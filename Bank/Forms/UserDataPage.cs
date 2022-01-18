@@ -17,6 +17,11 @@ namespace Bank.Forms
         {
             InitializeComponent();
 
+            //Show my data amint betolt (konstruct)
+            BankDataContext context = new BankDataContext();
+            var cont4 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp).FirstOrDefault();
+
+            UserDatakerlekmenj.Text = cont4.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -81,12 +86,12 @@ namespace Bank.Forms
             BankDataContext context = new BankDataContext();
             //ennel mokolosabban nem lehet megoldani lol
             var cont1 = context.Posts.Where(actil => actil.username == usernameLoginHelper.usernameHp).FirstOrDefault();
-            cont1.egyenleg = cont1.egyenleg - (double)monniadas.Value;//HEEEEEEEEELP
+            cont1.egyenleg = cont1.egyenleg - (double)monnikivetel.Value;//HEEEEEEEEELP
             context.SaveChanges();
 
 
 
-            MessageBox.Show("Sikkeresen kivett " + (double)monniadas.Value + "RON-t szamlajahoz ");
+            MessageBox.Show("Sikkeresen kivett " + (double)monnikivetel.Value + "RON-t szamlajahoz ");
 
 
 
@@ -95,6 +100,8 @@ namespace Bank.Forms
             //kene kicsi biztonsag ide, egy bool al 
         }
     }
+
+
 
     public static class userselect { 
         //public static var helperToSelectUser;

@@ -38,6 +38,7 @@
             this.confirmAddation = new System.Windows.Forms.Button();
             this.takeaOutconfirm = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AccountSettingsButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.monniadas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monnikivetel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +61,7 @@
             this.ShowData.Name = "ShowData";
             this.ShowData.Size = new System.Drawing.Size(122, 23);
             this.ShowData.TabIndex = 1;
-            this.ShowData.Text = "Show My datas";
+            this.ShowData.Text = "Refresh my data";
             this.ShowData.UseVisualStyleBackColor = true;
             this.ShowData.Click += new System.EventHandler(this.ShowData_Click);
             // 
@@ -131,12 +132,22 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // AccountSettingsButton
+            // 
+            this.AccountSettingsButton.Location = new System.Drawing.Point(12, 572);
+            this.AccountSettingsButton.Name = "AccountSettingsButton";
+            this.AccountSettingsButton.Size = new System.Drawing.Size(122, 23);
+            this.AccountSettingsButton.TabIndex = 9;
+            this.AccountSettingsButton.Text = "Account Settings";
+            this.AccountSettingsButton.UseVisualStyleBackColor = true;
+            // 
             // UserDatalabel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(1028, 639);
+            this.Controls.Add(this.AccountSettingsButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.takeaOutconfirm);
             this.Controls.Add(this.confirmAddation);
@@ -167,5 +178,6 @@
         private System.Windows.Forms.Button confirmAddation;
         private System.Windows.Forms.Button takeaOutconfirm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button AccountSettingsButton;
     }
 }
