@@ -140,6 +140,7 @@
             this.AccountSettingsButton.TabIndex = 9;
             this.AccountSettingsButton.Text = "Account Settings";
             this.AccountSettingsButton.UseVisualStyleBackColor = true;
+            this.AccountSettingsButton.Click += new System.EventHandler(this.AccountSettingsButton_Click);
             // 
             // UserDatalabel
             // 

@@ -57,13 +57,8 @@ namespace Bank
 
                 //kiszedjuk a nont ba azt a sort amit fogunk hasznalni (a megadott user nev alapjan keresunk)
                 var cont = context.Posts.Where(actual => actual.username == username.Text).FirstOrDefault();//first order azt jelenti ,hogy az elsot azon a neven
-                try
-                {
-                    usernameLoginHelper.usernameHp = cont.username;
-                }
-                catch (Exception ex) {
-                    MessageBox.Show(ex.ToString());
-                }
+                usernameLoginHelper.usernameHp = cont.username;
+
 
 
                 if (cont != null & cont.password == passwordTB.Text)
@@ -73,7 +68,6 @@ namespace Bank
                     {
                         UserDatalabel form3 = new UserDatalabel();
                         form3.ShowDialog();
-                        string segitseg = cont.username;
                     }
                     catch (Exception ex)
                     {

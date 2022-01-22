@@ -46,18 +46,21 @@
             this.usernamming = new System.Windows.Forms.TextBox();
             this.UsernaME = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.FirstName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // RegisterSubmit
             // 
-            this.RegisterSubmit.Location = new System.Drawing.Point(51, 464);
+            this.RegisterSubmit.BackColor = System.Drawing.Color.Orange;
+            this.RegisterSubmit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RegisterSubmit.BackgroundImage")));
+            this.RegisterSubmit.Location = new System.Drawing.Point(8, 478);
             this.RegisterSubmit.Name = "RegisterSubmit";
-            this.RegisterSubmit.Size = new System.Drawing.Size(75, 23);
+            this.RegisterSubmit.Size = new System.Drawing.Size(197, 64);
             this.RegisterSubmit.TabIndex = 0;
-            this.RegisterSubmit.Text = "Submit";
-            this.RegisterSubmit.UseVisualStyleBackColor = true;
+            this.RegisterSubmit.UseVisualStyleBackColor = false;
             this.RegisterSubmit.Click += new System.EventHandler(this.RegisterSubmit_Click);
             // 
             // VezetekNev
@@ -70,14 +73,14 @@
             // 
             // KeresztNev
             // 
-            this.KeresztNev.Location = new System.Drawing.Point(8, 184);
+            this.KeresztNev.Location = new System.Drawing.Point(8, 167);
             this.KeresztNev.Name = "KeresztNev";
             this.KeresztNev.Size = new System.Drawing.Size(243, 20);
             this.KeresztNev.TabIndex = 2;
             // 
             // passwordField
             // 
-            this.passwordField.Location = new System.Drawing.Point(8, 284);
+            this.passwordField.Location = new System.Drawing.Point(8, 308);
             this.passwordField.Name = "passwordField";
             this.passwordField.PasswordChar = '*';
             this.passwordField.Size = new System.Drawing.Size(243, 20);
@@ -85,7 +88,7 @@
             // 
             // passwordCHeck
             // 
-            this.passwordCHeck.Location = new System.Drawing.Point(8, 333);
+            this.passwordCHeck.Location = new System.Drawing.Point(8, 354);
             this.passwordCHeck.Name = "passwordCHeck";
             this.passwordCHeck.Size = new System.Drawing.Size(243, 20);
             this.passwordCHeck.TabIndex = 5;
@@ -103,7 +106,7 @@
             // 
             this.knev.AutoSize = true;
             this.knev.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.knev.Location = new System.Drawing.Point(4, 161);
+            this.knev.Location = new System.Drawing.Point(8, 144);
             this.knev.Name = "knev";
             this.knev.Size = new System.Drawing.Size(100, 20);
             this.knev.TabIndex = 7;
@@ -113,7 +116,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(4, 261);
+            this.label3.Location = new System.Drawing.Point(4, 285);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 8;
@@ -123,7 +126,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(4, 310);
+            this.label4.Location = new System.Drawing.Point(4, 331);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 9;
@@ -131,7 +134,7 @@
             // 
             // BirthDayPicker
             // 
-            this.BirthDayPicker.Location = new System.Drawing.Point(8, 438);
+            this.BirthDayPicker.Location = new System.Drawing.Point(8, 446);
             this.BirthDayPicker.Name = "BirthDayPicker";
             this.BirthDayPicker.Size = new System.Drawing.Size(243, 20);
             this.BirthDayPicker.TabIndex = 31;
@@ -141,7 +144,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(8, 415);
+            this.label1.Location = new System.Drawing.Point(4, 423);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 20);
             this.label1.TabIndex = 32;
@@ -150,7 +153,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(435, 138);
+            this.pictureBox1.Location = new System.Drawing.Point(436, 134);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(587, 481);
             this.pictureBox1.TabIndex = 33;
@@ -158,7 +161,7 @@
             // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(8, 385);
+            this.ID.Location = new System.Drawing.Point(8, 400);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(243, 20);
             this.ID.TabIndex = 34;
@@ -167,7 +170,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(8, 362);
+            this.label2.Location = new System.Drawing.Point(4, 377);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 20);
             this.label2.TabIndex = 35;
@@ -175,7 +178,7 @@
             // 
             // usernamming
             // 
-            this.usernamming.Location = new System.Drawing.Point(8, 232);
+            this.usernamming.Location = new System.Drawing.Point(8, 262);
             this.usernamming.Name = "usernamming";
             this.usernamming.Size = new System.Drawing.Size(243, 20);
             this.usernamming.TabIndex = 36;
@@ -184,7 +187,7 @@
             // 
             this.UsernaME.AutoSize = true;
             this.UsernaME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.UsernaME.Location = new System.Drawing.Point(4, 209);
+            this.UsernaME.Location = new System.Drawing.Point(4, 239);
             this.UsernaME.Name = "UsernaME";
             this.UsernaME.Size = new System.Drawing.Size(96, 20);
             this.UsernaME.TabIndex = 37;
@@ -200,12 +203,31 @@
             this.pictureBox2.TabIndex = 38;
             this.pictureBox2.TabStop = false;
             // 
+            // FirstName
+            // 
+            this.FirstName.Location = new System.Drawing.Point(8, 216);
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Size = new System.Drawing.Size(243, 20);
+            this.FirstName.TabIndex = 39;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(8, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 20);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "First Name:";
+            // 
             // Cim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(1020, 499);
+            this.ClientSize = new System.Drawing.Size(1020, 554);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.FirstName);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.UsernaME);
             this.Controls.Add(this.usernamming);
@@ -252,5 +274,7 @@
         private System.Windows.Forms.TextBox usernamming;
         private System.Windows.Forms.Label UsernaME;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox FirstName;
+        private System.Windows.Forms.Label label5;
     }
 }

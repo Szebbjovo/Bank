@@ -47,7 +47,7 @@ namespace Bank
                     false,
                     2,
                     0,
-                    VezetekNev.Text,
+                    FirstName.Text,
                     KeresztNev.Text,
                     BirthDayPicker.Value,
                     DateTime.Now, passwordField.Text

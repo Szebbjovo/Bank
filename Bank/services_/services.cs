@@ -21,7 +21,7 @@ namespace Bank
 
             this.egyenleg = egyenleg;
             this.kNev = knev;
-            this.kNev = vnev;
+            this.vNev = vnev;
             this.szuletes = now1;
             this.regisztracioDatuma = now2;
             this.username = usernm;//vnev + "-" + knev;

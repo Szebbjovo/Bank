@@ -62,6 +62,12 @@
     <Compile Include="Forms\AccountsManager_employeOnly.Designer.cs">
       <DependentUpon>AccountsManager_employeOnly.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AccountSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountSettings.Designer.cs">
+      <DependentUpon>AccountSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LogInpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>vasbankDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AccountSettings.resx">
+      <DependentUpon>AccountSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AccountsManager_employeOnly.resx">
       <DependentUpon>AccountsManager_employeOnly.cs</DependentUpon>
     </EmbeddedResource>

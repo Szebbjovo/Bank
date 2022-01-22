@@ -99,6 +99,13 @@ namespace Bank.Forms
             takeaOutconfirm.Visible = false;
             //kene kicsi biztonsag ide, egy bool al 
         }
+
+        //account settings
+        private void AccountSettingsButton_Click(object sender, EventArgs e)
+        {
+            AccountSettings form = new AccountSettings();
+            form.ShowDialog();
+        }
     }
 
 
