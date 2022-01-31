@@ -11,7 +11,8 @@ ITS NOT DONE
    
 --Admin mod (as an employee)
 
-![cllage](https://user-images.githubusercontent.com/78962708/151859683-2c0ff6bb-531a-4317-b05f-6a13ab6384e1.JPG)
+
+![loggggdf](https://user-images.githubusercontent.com/78962708/151859909-74420011-fc31-49f3-84a9-a0dddd3b9a85.JPG)
 
 
 
