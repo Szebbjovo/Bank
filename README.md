@@ -7,6 +7,8 @@
 
 Dowloand and install , the official microsoft tools:
 SQL manager studio:
+
+
 https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
 https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 
@@ -21,7 +23,12 @@ PM> enable-migrations
 
 #2. setup the connection string
 
--go in the App.config file:
+-go in the App.c
+
+![Capture](https://user-images.githubusercontent.com/78962708/151858608-c926f3e7-2255-4d56-9b38-3febc7505acf.JPG)
+
+
+onfig file:
 
 write on the bottm : 
 
@@ -29,6 +36,9 @@ write on the bottm :
         <add name="--TYPE THE NAME OF YOUR DATABASE" connectionString="data source=--TYPE YOUR SERVER ADDRESS--; initial catalog=vasbank; integrated security=true"
             providerName="System.Data.SqlClient" />
     </connectionStrings>
+    
+    ![sql manager](https://user-images.githubusercontent.com/78962708/151858565-b791c20c-574f-4a35-8f29-3eb01ce821e4.JPG)
+
     
 #3. Run the program, first time u have to register users, and after that u can test the other functions
 
