@@ -1,5 +1,19 @@
 # Bank
 !! this is a school project, and feel fre to inspitare from it !!
+ITS NOT DONE
+
+
+#Feature 
+--You can add members by register them
+    -Monye take out
+    -Money add
+    -Delete my account
+   
+--Admin mod (as an employee)
+
+![cllage](https://user-images.githubusercontent.com/78962708/151859683-2c0ff6bb-531a-4317-b05f-6a13ab6384e1.JPG)
+
+
 
 #Setup
 
@@ -46,3 +60,8 @@ Note: the admin mod can be accesd by typing the "ADMIN" as the username, and "fe
 
 
 Hope you find intresting my work, and wish me luck to get a good grad :)))
+
+
+
+
+
