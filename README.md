@@ -37,7 +37,7 @@ write on the bottm :
             providerName="System.Data.SqlClient" />
     </connectionStrings>
     
-    ![sql manager](https://user-images.githubusercontent.com/78962708/151858565-b791c20c-574f-4a35-8f29-3eb01ce821e4.JPG)
+ ![sql manager](https://user-images.githubusercontent.com/78962708/151858565-b791c20c-574f-4a35-8f29-3eb01ce821e4.JPG)
 
     
 #3. Run the program, first time u have to register users, and after that u can test the other functions
