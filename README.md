@@ -60,7 +60,7 @@ write on the bottm :
 Note: the admin mod can be accesd by typing the "ADMIN" as the username, and "ferko" as the password
 
 
-Hope you find intresting my work, and wish me luck to get a good grad :)))
+Hope you find intresting my work, and wish me luck to get a good grade :)))
 
 
 
