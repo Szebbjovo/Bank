@@ -3,7 +3,7 @@
 ITS NOT DONE
 
 
-#Feature 
+<head>Feature<head/> 
 --You can add members by register them
     -Monye take out
     -Money add
