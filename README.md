@@ -1,5 +1,5 @@
 # Bank
-!! this is a school project, and feel fre to inspitare from it !!
+
 ITS NOT DONE
 
 
@@ -60,7 +60,6 @@ write on the bottm :
 Note: the admin mod can be accesd by typing the "ADMIN" as the username, and "ferko" as the password
 
 
-Hope you find intresting my work, and wish me luck to get a good grade :)))
 
 
 
